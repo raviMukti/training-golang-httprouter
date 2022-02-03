@@ -9,4 +9,4 @@
 - Ada beberapa jenis router pattern diantaranya adalah Named Parameter, Catch All parameter
 - Named parameter adalah pola pembuatan parameter dengan menggunakan nama. Setiap nama parameter harus diawali dengan : (titik dua), lalu diikuti dengan nama parameter. Contoh, jika kita memiliki pattern seperti ini /user/ravi maka ini akan match dengan /user/:user
 - Selain named parameter, ada juga yang bernama catch all parameter, yaitu menangkap semua parameter. Catch all parameter harus diawali dengan * (bintang), lalu diikuti dengan nama parameter. Catch all parameter harus berada di posisi akhir URL. Contoh pattern nya adalah /src/somefile maka akan match dengan /src/*filepath
-
+- Pada materi Go-Lang Web, kita sudah pernah membahas tentang Serve File. Pada Router pun, mendukung serve static file menggunakan function ServeFiles(Path, FileSystem). Dimana pada Path, kita harus menggunakan Catch All Parameter. Sedangkan pada FileSystem kita bisa melakukan manual load dari folder atau menggunakan golang embed, seperti yang pernah kita bahas di materi Go-Lang Web
